@@ -6,7 +6,7 @@ from db.models import DBUser
 def create_user(session: DBSession, user: RequestCreateEmployeeDto) -> DBUser:
     new_user = DBUser(
         login=user.login,
-        pasword=user.password,
+        password=user.password,
         first_name=user.first_name,
         last_name=user.last_name,
     )
